@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>Aprendendo Vue JS</h1>
+        <!-- Chamada da função para renderizar a messagem e o contador -->
+        <p>{{ messageCount }}</p>
+        <!-- O @ é a mesma coisa que v-on -->
+        <button @click="count++">Incrementar</button>
+    </div>
+
+    <!-- Script da biblioteca do Vue JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            // O el corresponde ao identificador do elemento, ao qual deseja manipular
+            el: "#app",
+            data: {
+                message: "Número de vezes clicadas no botão",
+                count: 0,
+            },
+            // O computed são propriedades reativas a algum valor de outro elemento, utilizado para adicionar listeners aos elementos
+            computed: {
+                // Função que atualiza o count em tempo real
+                messageCount() {
+                    return `${this.message} : ${this.count}`;
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>
