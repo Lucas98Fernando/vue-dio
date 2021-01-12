@@ -27,6 +27,9 @@ yarn global add @vue/cli</code></pre>
 # OU através de uma interface gráfica
 vue ui</code></pre>
 
+<p>Executar o ambiente de desenvolvimento local com o npm:</p>
+<pre><code>npm run serve</code></pre>
+
 <h2>Vue DevTools</h2>
 <p>Para facilitar a depuração de arquivos Vue JS, é recomendado instalar a extensão para navegadores oficial do Vue DevTools</p>
 <a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd" target="_blank">Clique aqui para baixar o Vue DevTools</a>
