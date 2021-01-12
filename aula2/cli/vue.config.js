@@ -1,3 +1,5 @@
+// Flag para possibilitar a utilização de componentes que não sejam apenas .vue
 module.exports = {
-  lintOnSave: false,
+  lintOnSave: true,
+  runtimeCompiler: true,
 };
